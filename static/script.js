@@ -175,7 +175,7 @@ function addCity(city) {
 
 async function fetchWeather(city) {
     try {
-        const response = await fetch(`http://127.0.0.1:5000/weather/${city}`);
+        const response = await fetch(`/weather/${city}`);
         const data = await response.json();
 
         if (data.error) {
