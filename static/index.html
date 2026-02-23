@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Weather</title>
+    <link rel="stylesheet" href="/static/style.css?v=2">
+</head>
+<body>
+
+    <div class="app-container">
+
+        <h1 class="app-title">🌍 World Weather</h1>
+        <p class="app-subtitle">Track time & weather for any city</p>
+
+        <div class="search-box">
+           <div class="input-wrapper">
+              <input 
+                 type="text" 
+                 id="cityInput" 
+                  placeholder="Search for a city and press Enter..."
+                  autocomplete="off"
+                />
+                <ul id="suggestions" class="suggestions-list"></ul>
+            </div>
+        </div>
+
+        <div id="errorMsg" class="error-msg"></div>
+
+        <div id="cityGrid" class="city-grid"></div>
+
+    </div>
+
+    <script src="/static/script.js?v=2"></script>
+</body>
+</html>
